@@ -12,7 +12,7 @@ set subject="Reboot APS"
 set email_from=user@dominio.com
 set email_to=user@dominio.com
 set body="############Conteudo do e-mail"
-set server=psmail2013.aitec.pt
+set server=servidor_email
 blat.exe -attach "C:\rebootunifi\relatorios\log_ap_reboot_%date%.txt" -p configsmtp -to %email_to% -subject %subject% -body %body% -server %server% -f %email_from%
 pause
 
